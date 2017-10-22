@@ -1,4 +1,4 @@
-# 'Writting to /dev/null' blog
+# 'Writing to /dev/null' blog
 
 The site is built on top of [Jekyll](http://jekyllrb.com/).
 
