@@ -26,22 +26,22 @@ _What to do?_ -- you may ask. The answer is simple -- encrypt, encrypt everythin
 
 When you use encryption, you can share with other passwords, and other credentials in a secure way over the network.
 Moreover, a sent message can't be changed -- read -- your urls look like they should. Thankfully, most of my aware
-coworkers know it and use [`Enigmal`][link_enigmail]. You can even only sign a mail if you hadn't exchanged keys with
+coworkers know it and use [`Enigmail`][link_enigmail]. You can even only sign a mail if you hadn't exchanged keys with
 your recipient. In this case, the text also can't be malformed.
 
 ---
 
 There is only one problem -- mail groups. It's a good idea to have only one mail to share with others your ideas/problems.
-But with `Enigmal`, you have to pick one by one recipient keys to build the whole list.
+But with `Enigmail`, you have to pick one by one recipient keys to build the whole list.
 To be honest, the plugin has the option
 `Edit Per-Recipient Rules`, but it doesn't work correctly, or I have no idea how to convince it to work. I had tried many
 things, but I can't edit the filed `set Enigmail Rules for`.
 
 ---
 
-In spare time I started digging for solution, and I found it. You need only create a group of recipients but in `gpg2` (`Enigmal`
+In spare time I started digging for solution, and I found it. You need only create a group of recipients but in `gpg2` (`Enigmail`
 uses it by default). The most important part of this solution is: *the name of the group has to be the mail group*. If you make
-a group that doesn't look like a mail address, then `Enigmal` doesn't accept it.
+a group that doesn't look like a mail address, then `Enigmail` doesn't accept it.
 
 Here is an example. My mail group is `dirdival@somwhere.over.the.rainbow.com`, and it has two members.
 You need only add in the file `~/.gnupg/gpg.conf` this line:
@@ -97,9 +97,9 @@ Decryption:
 
 ---
 
-The last thing. Almost all of my encrypted mails, which go through `Office 365`, are mangled. Thankfully, `Enigmal` has the button `repair` to prevent a _bad touch_.
+The last thing. Almost all of my encrypted mails, which go through `Office 365`, are mangled. Thankfully, `Enigmail` has the button `repair` to prevent a _bad touch_.
 
 
-[link_enigmail]:https://www.enigmail.net/index.php/en/ "Enigmal - the main page"
+[link_enigmail]:https://www.enigmail.net/index.php/en/ "Enigmail - the main page"
 [link_atp]:https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description "Office 365: Advanced Thread Protection"
 [link_rewriting]:https://langbein.org/microsoft-outlook-office365-url-rewriting-in-e-mails/ "article: Office365 URL Rewriting in E-Mails"
